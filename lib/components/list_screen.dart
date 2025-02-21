@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 
 class ListScreen extends StatelessWidget {
   final String name;
- 
+
   ListScreen({required this.name});
 
-  final List<String> items =
-      List<String>.generate(
-          10, (i) => "Item ${i + 1}");
+  final List<String> items = List<String>.generate(10, (i) => "Item ${i + 1}");
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +20,8 @@ class ListScreen extends StatelessWidget {
         ),
       ),
       body: ListView.builder(
-        itemCount: items.length + 1, 
+        itemCount: items.length + 1,
         itemBuilder: (context, index) {
-
           if (index == 0) {
             return Padding(
               padding: const EdgeInsets.all(8.0),
@@ -53,8 +50,7 @@ class ListScreen extends StatelessWidget {
               ),
               child: ListTile(
                 leading: Icon(Icons.label),
-                title:
-                    Text(items[index - 1]),
+                title: Text(items[index - 1]),
               ),
             ),
           );

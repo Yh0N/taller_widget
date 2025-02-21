@@ -40,12 +40,10 @@ class HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Navega a la pantalla de lista y pasa el nombre ingresado
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ListScreen(
-                        name: nameController.text), // Corregido a 'ListScreen'
+                    builder: (context) => ListScreen(name: nameController.text),
                   ),
                 );
               },
