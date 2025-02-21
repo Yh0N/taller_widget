@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'list_screen.dart'; // Asegúrate de que el nombre del archivo coincida con el import
+import 'list_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
