@@ -23,7 +23,7 @@ class HomeScreenState extends State<HomeScreen> {
           children: [
             Image(
               image: NetworkImage(
-                'https://www.ucc.edu.co/campus-pasto/PublishingImages/Banner%20Campus%20Pasto/banner_campus_portal_13.jpg',
+                'https://m87.com.co/wp-content/uploads/2023/08/Banner-interno-coperativa-1-1.jpg',
               ),
               height: 200,
             ),
